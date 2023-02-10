@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family:'7 segments', 'Times New Roman', Times, serif;
     color: white;
+    user-select: none;
 }
 
 html{
@@ -28,7 +29,7 @@ body{
 
 .main-container{
     width: 600px;
-    height: 400px;
+    height: 450px;
     max-width: 90vw;
     display: flex;
     flex-direction: column;
@@ -74,6 +75,12 @@ p{
     background-color: rgba(61, 165, 217, 0.5);
     user-select: none;
     cursor: pointer;
+}
+
+.name{
+    font-size: 2.5rem;
+    margin-top: 7%;
+    user-select: text;
 }
 
 @media (max-width:580px) {
