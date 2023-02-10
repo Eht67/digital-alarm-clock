@@ -1,0 +1,83 @@
+@font-face {
+    font-family: '7 segments';
+    src: url(/Fonts/Seven\ Segment.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'7 segments', 'Times New Roman', Times, serif;
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/background.jpeg');
+    background-color: #2364AA;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    width: 600px;
+    height: 400px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    background-color: rgba(61, 165, 217, 0.25);
+    padding: 2% 4%;
+    border-radius: 10px;
+}
+
+.heading h1{
+    font-size: 6.4rem;
+    font-weight: 400;
+}
+
+.clock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p{
+    width: 23%;
+    text-align: center;
+    background-color: rgba(61, 165, 217, 0.25);
+    border-radius: 10px;
+    padding: 2% 4%;
+    margin: 8% auto;
+    font-size: 8rem;
+}
+
+#alarm-btn{
+    background-color: rgba(61, 165, 217, 0.25);
+    font-size: 5rem;
+    padding: 2% 4%;
+    border-radius: 10px;
+}
+
+#alarm-btn:hover{
+    background-color: rgba(61, 165, 217, 0.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+@media (max-width:580px) {
+    html {
+        font-size: 40%;
+    }
+}
